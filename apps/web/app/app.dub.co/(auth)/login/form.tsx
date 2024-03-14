@@ -55,7 +55,7 @@ export default function LoginForm() {
           variant="secondary"
           onClick={() => {
             setClickedGithub(true);
-            signIn("github", {
+            signIn("discord", {
               ...(next && next.length > 0 ? { callbackUrl: next } : {}),
             });
           }}

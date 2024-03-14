@@ -38,7 +38,7 @@ export default function RegisterForm() {
         text="Continue with GitHub"
         onClick={() => {
           setClickedGithub(true);
-          signIn("github", {
+          signIn("discord", {
             ...(next && next.length > 0 ? { callbackUrl: next } : {}),
           });
         }}

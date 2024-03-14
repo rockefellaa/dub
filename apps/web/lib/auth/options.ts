@@ -7,6 +7,7 @@ import LoginLink from "emails/login-link";
 import WelcomeEmail from "emails/welcome-email";
 import { type NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import DiscordProvider from "next-auth/providers/discord";
 import EmailProvider from "next-auth/providers/email";
 import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
@@ -29,6 +30,10 @@ export const authOptions: NextAuthOptions = {
           });
         }
       },
+    }),
+    DiscordProvider({
+      clientId: process.env.DISCORD_CLIENT_ID as string,
+      clientSecret: process.env.DISCORD_CLIENT_SECRET as string,
     }),
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID as string,
@@ -203,7 +208,7 @@ export const authOptions: NextAuthOptions = {
             },
           });
         }
-      } else if (account?.provider === "github") {
+      } else if (account?.provider === "discord") {
         const userExists = await prisma.user.findUnique({
           where: { email: user.email },
           select: { name: true, image: true },

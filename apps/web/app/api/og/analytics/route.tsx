@@ -21,7 +21,7 @@ export async function GET(req: NextRequest) {
   ]);
 
   const domain = req.nextUrl.searchParams.get("domain") || "dub.sh";
-  const key = req.nextUrl.searchParams.get("key") || "github";
+  const key = req.nextUrl.searchParams.get("key") || "discord";
 
   const link = await getDomainOrLink({ domain, key });
   if (!link?.publicStats) {

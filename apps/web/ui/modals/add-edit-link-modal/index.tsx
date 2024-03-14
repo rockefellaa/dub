@@ -508,7 +508,7 @@ function AddEditLinkModal({
                           props && lockKey,
                       },
                     )}
-                    placeholder="github"
+                    placeholder="discord"
                     value={key}
                     onChange={(e) => {
                       setKeyError(null);
