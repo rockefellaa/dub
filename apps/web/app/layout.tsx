@@ -1,5 +1,5 @@
 import { inter, satoshi } from "@/styles/fonts";
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import { TooltipProvider } from "@dub/ui/src/tooltip";
 import { cn, constructMetadata } from "@dub/utils";
 import { Analytics } from "@vercel/analytics/react";

@@ -1,12 +1,18 @@
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import localFont from "next/font/local";
 
-export const satoshi = localFont({
-  src: "../styles/Satoshi-Variable.woff2",
+// export const satoshi = localFont({
+//   src: "Satoshi-Variable.woff2",
+//   variable: "--font-satoshi",
+//   weight: "300 900",
+//   display: "swap",
+//   style: "normal",
+// });
+
+export const satoshi = Roboto({
   variable: "--font-satoshi",
-  weight: "300 900",
-  display: "swap",
-  style: "normal",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const inter = Inter({
