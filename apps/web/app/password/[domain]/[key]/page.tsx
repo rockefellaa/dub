@@ -7,7 +7,7 @@ import PasswordForm from "./form";
 const title = "Password Required";
 const description =
   "This link is password protected. Please enter the password to view it.";
-const image = "https://assets.dub.co/misc/password-protected.png";
+const image = "https://assets.mylx.co/misc/password-protected.png";
 
 export async function generateMetadata({
   params,
@@ -41,7 +41,7 @@ export async function generateMetadata({
   return constructMetadata({
     title:
       isDubDomain(domain) || link.project?.plan === "free"
-        ? `${title} - Dub.co`
+        ? `${title} - mylx.co`
         : title,
     description,
     image,
@@ -127,7 +127,7 @@ export default async function PasswordProtectedLinkPage({
               className="h-10 w-10 rounded-full"
             />
           ) : (
-            <a href="https://dub.co" target="_blank" rel="noreferrer">
+            <a href="https://mylx.co" target="_blank" rel="noreferrer">
               <Logo />
             </a>
           )}

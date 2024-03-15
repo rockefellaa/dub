@@ -13,7 +13,7 @@ export const getProjectInfo: ZodOpenApiOperationObject = {
       projectSlug: z
         .string()
         .describe(
-          "The slug for the project to retrieve. E.g. for `app.dub.co/acme`, the projectSlug is `acme`.",
+          "The slug for the project to retrieve. E.g. for `app.mylx.co/acme`, the projectSlug is `acme`.",
         ),
     }),
   },

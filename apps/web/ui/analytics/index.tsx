@@ -1,9 +1,9 @@
 "use client";
 /* 
   This Stats component lives in 3 different places:
-  1. Project link page, e.g. app.dub.co/dub/d.to/github
-  2. Generic Dub.co link page, e.g. app.dub.co/links/steven
-  3. Public stats page, e.g. dub.co/stats/github, stey.me/stats/weathergpt
+  1. Project link page, e.g. app.mylx.co/dub/d.to/github
+  2. Generic mylx.co link page, e.g. app.mylx.co/links/steven
+  3. Public stats page, e.g. mylx.co/stats/github, stey.me/stats/weathergpt
 
   We use the `useEndpoint()` hook to get the correct layout
 */
@@ -60,7 +60,7 @@ export default function Analytics({
   const tagId = searchParams?.get("tagId") ?? undefined;
 
   const { basePath, domain, baseApiPath } = useMemo(() => {
-    // Project link analytics page, e.g. app.dub.co/dub/analytics?domain=dub.sh&key=github
+    // Project link analytics page, e.g. app.mylx.co/dub/analytics?domain=dub.sh&key=github
     if (slug) {
       return {
         basePath: `/${slug}/analytics`,
@@ -68,7 +68,7 @@ export default function Analytics({
         domain: domainSlug,
       };
     } else {
-      // Public stats page, e.g. dub.co/stats/github, stey.me/stats/weathergpt
+      // Public stats page, e.g. mylx.co/stats/github, stey.me/stats/weathergpt
       return {
         basePath: `/stats/${key}`,
         baseApiPath: "/api/analytics/edge",

@@ -6,7 +6,7 @@ const LinksQuerySchema = {
   projectSlug: z
     .string()
     .describe(
-      "The slug for the project that the link belongs to. E.g. for `app.dub.co/acme`, the projectSlug is `acme`.",
+      "The slug for the project that the link belongs to. E.g. for `app.mylx.co/acme`, the projectSlug is `acme`.",
     ),
   domain: z
     .string()
@@ -75,7 +75,7 @@ export const getLinkInfoQuerySchema = z.object({
     .string()
     .min(1, "Project slug is required.")
     .describe(
-      "The slug for the project that the link belongs to. E.g. for `app.dub.co/acme`, the projectSlug is `acme`.",
+      "The slug for the project that the link belongs to. E.g. for `app.mylx.co/acme`, the projectSlug is `acme`.",
     ),
   domain: z
     .string()
@@ -148,19 +148,19 @@ export const createLinkBodySchema = z.object({
     .string()
     .nullish()
     .describe(
-      "The title of the short link generated via `api.dub.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
+      "The title of the short link generated via `api.mylx.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
     ),
   description: z
     .string()
     .nullish()
     .describe(
-      "The description of the short link generated via `api.dub.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
+      "The description of the short link generated via `api.mylx.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
     ),
   image: z
     .string()
     .nullish()
     .describe(
-      "The image of the short link generated via `api.dub.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
+      "The image of the short link generated via `api.mylx.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
     ),
   rewrite: z
     .boolean()
@@ -252,19 +252,19 @@ export const LinkSchema = z
       .string()
       .nullable()
       .describe(
-        "The title of the short link generated via `api.dub.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
+        "The title of the short link generated via `api.mylx.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
       ),
     description: z
       .string()
       .nullable()
       .describe(
-        "The description of the short link generated via `api.dub.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
+        "The description of the short link generated via `api.mylx.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
       ),
     image: z
       .string()
       .nullable()
       .describe(
-        "The image of the short link generated via `api.dub.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
+        "The image of the short link generated via `api.mylx.co/metatags`. Will be used for Custom Social Media Cards if `proxy` is true.",
       ),
     rewrite: z
       .boolean()
@@ -316,7 +316,7 @@ export const LinkSchema = z
       .string()
       .url()
       .describe(
-        "The full URL of the QR code for the short link (e.g. `https://api.dub.co/qr?url=https://dub.sh/try`).",
+        "The full URL of the QR code for the short link (e.g. `https://api.mylx.co/qr?url=https://dub.sh/try`).",
       ),
     utm_source: z
       .string()

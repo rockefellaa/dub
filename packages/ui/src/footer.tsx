@@ -40,10 +40,10 @@ const navigation = {
 };
 
 export function Footer() {
-  const { domain = "dub.co" } = useParams() as { domain: string };
+  const { domain = "mylx.co" } = useParams() as { domain: string };
 
   const createHref = (href: string) =>
-    domain === "dub.co" ? href : `https://dub.co${href}`;
+    domain === "mylx.co" ? href : `https://mylx.co${href}`;
 
   return (
     <footer>
@@ -52,7 +52,7 @@ export function Footer() {
           <div className="space-y-6">
             <Link
               href={createHref("/")}
-              {...(domain !== "dub.co" && {
+              {...(domain !== "mylx.co" && {
                 onClick: () => {
                   va.track("Referred from custom domain", {
                     domain,
@@ -124,7 +124,7 @@ export function Footer() {
                     <li key={item.name}>
                       <Link
                         href={createHref(item.href)}
-                        {...(domain !== "dub.co" && {
+                        {...(domain !== "mylx.co" && {
                           onClick: () => {
                             va.track("Referred from custom domain", {
                               domain,
@@ -147,7 +147,7 @@ export function Footer() {
                     <li key={item.name}>
                       <Link
                         href={createHref(item.href)}
-                        {...(domain !== "dub.co" && {
+                        {...(domain !== "mylx.co" && {
                           onClick: () => {
                             va.track("Referred from custom domain", {
                               domain,
@@ -175,7 +175,7 @@ export function Footer() {
                       <li key={item.name}>
                         <Link
                           href={createHref(item.href)}
-                          {...(domain !== "dub.co" && {
+                          {...(domain !== "mylx.co" && {
                             onClick: () => {
                               va.track("Referred from custom domain", {
                                 domain,
@@ -198,7 +198,7 @@ export function Footer() {
                       <li key={item.name}>
                         <Link
                           href={createHref(item.href)}
-                          {...(domain !== "dub.co" && {
+                          {...(domain !== "mylx.co" && {
                             onClick: () => {
                               va.track("Referred from custom domain", {
                                 domain,
@@ -223,7 +223,7 @@ export function Footer() {
                     <li key={item.name}>
                       <Link
                         href={createHref(item.href)}
-                        {...(domain !== "dub.co" && {
+                        {...(domain !== "mylx.co" && {
                           onClick: () => {
                             va.track("Referred from custom domain", {
                               domain,
@@ -243,7 +243,7 @@ export function Footer() {
           </div>
         </div>
         <Image
-          src="https://assets.dub.co/footer.png"
+          src="https://assets.mylx.co/footer.png"
           alt="Dub Technologies, Inc. Logo"
           width={1959}
           height={625}
@@ -263,7 +263,7 @@ function StatusBadge() {
         | "partial_outage"
         | "full_outage";
     }[];
-  }>("https://status.dub.co/api/v1/summary", fetcher);
+  }>("https://status.mylx.co/api/v1/summary", fetcher);
 
   const [color, setColor] = useState("bg-gray-200");
   const [status, setStatus] = useState("Loading status...");
@@ -287,7 +287,7 @@ function StatusBadge() {
 
   return (
     <Link
-      href="https://status.dub.co"
+      href="https://status.mylx.co"
       target="_blank"
       className="group flex max-w-fit items-center space-x-2 rounded-md border border-gray-200 bg-white px-3 py-2 transition-colors hover:bg-gray-100"
     >

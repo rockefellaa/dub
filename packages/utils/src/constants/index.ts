@@ -9,7 +9,7 @@ export * from "./misc";
 export * from "./pricing";
 export * from "./saml";
 
-export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Dub.co";
+export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "mylx.co";
 
 export const SHORT_DOMAIN =
   process.env.NEXT_PUBLIC_APP_SHORT_DOMAIN || "dub.sh";
@@ -56,8 +56,8 @@ export const ADMIN_HOSTNAMES = new Set([
   "admin.localhost:8888",
 ]);
 
-export const DUB_LOGO = "https://assets.dub.co/logo.png";
-export const DUB_THUMBNAIL = "https://assets.dub.co/thumbnail.png";
+export const DUB_LOGO = "https://assets.mylx.co/logo.png";
+export const DUB_THUMBNAIL = "https://assets.mylx.co/thumbnail.png";
 
 export const DUB_PROJECT_ID = "cl7pj5kq4006835rbjlt2ofka";
 export const LEGAL_PROJECT_ID = "clrflia0j0000vs7sqfhz9c7q";
@@ -73,7 +73,7 @@ export const DUB_DOMAINS = [
     publicStats: false,
     target: `https://${process.env.NEXT_PUBLIC_APP_DOMAIN}`,
     type: "redirect",
-    placeholder: "https://dub.co/help/article/what-is-dub",
+    placeholder: "https://mylx.co/help/article/what-is-dub",
     clicks: 0,
     allowedHostnames: [],
     projectId: DUB_PROJECT_ID,
@@ -87,7 +87,7 @@ export const DUB_DOMAINS = [
           primary: false,
           archived: false,
           publicStats: false,
-          target: "https://dub.co/tools/chatgpt-link-shortener",
+          target: "https://mylx.co/tools/chatgpt-link-shortener",
           type: "redirect",
           placeholder: "https://chat.openai.com/g/g-UGjKKONEe-domainsgpt",
           clicks: 0,
@@ -101,7 +101,7 @@ export const DUB_DOMAINS = [
           primary: false,
           archived: false,
           publicStats: false,
-          target: "https://dub.co/tools/spotify-link-shortener",
+          target: "https://mylx.co/tools/spotify-link-shortener",
           type: "redirect",
           placeholder: "https://open.spotify.com/album/1SCyi9a5pOasikidToUY5y",
           clicks: 0,
@@ -115,7 +115,7 @@ export const DUB_DOMAINS = [
           primary: false,
           archived: false,
           publicStats: false,
-          target: "https://dub.co/tools/github-link-shortener",
+          target: "https://mylx.co/tools/github-link-shortener",
           type: "redirect",
           placeholder: "https://github.com/dubinc/dub",
           clicks: 0,
@@ -129,7 +129,7 @@ export const DUB_DOMAINS = [
           primary: false,
           archived: false,
           publicStats: false,
-          target: "https://dub.co/tools/amazon-link-shortener",
+          target: "https://mylx.co/tools/amazon-link-shortener",
           type: "redirect",
           placeholder: "https://www.amazon.com/dp/B0BW4SWNC8",
           clicks: 0,

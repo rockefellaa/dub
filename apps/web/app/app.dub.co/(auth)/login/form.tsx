@@ -167,7 +167,7 @@ export default function LoginForm() {
                 Project Slug
               </h2>
               <InfoTooltip
-                content={`This is your project's unique identifier on ${process.env.NEXT_PUBLIC_APP_NAME}. E.g. app.dub.co/acme is "acme".`}
+                content={`This is your project's unique identifier on ${process.env.NEXT_PUBLIC_APP_NAME}. E.g. app.mylx.co/acme is "acme".`}
               />
             </div>
             <input

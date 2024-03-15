@@ -38,7 +38,7 @@ export default function ClicksExceeded({
     <Html>
       <Head />
       <Preview>
-        Your Dub.co project, {name || ""} has exceeded the{" "}
+        Your mylx.co project, {name || ""} has exceeded the{" "}
         {capitalize(plan) || ""} Plan limit of {nFormatter(usageLimit)} link
         clicks/month.
       </Preview>
@@ -58,9 +58,9 @@ export default function ClicksExceeded({
               Clicks Limit Exceeded
             </Heading>
             <Text className="text-sm leading-6 text-black">
-              Your Dub.co project,{" "}
+              Your mylx.co project,{" "}
               <Link
-                href={`https://app.dub.co/${slug}`}
+                href={`https://app.mylx.co/${slug}`}
                 className="text-black underline"
               >
                 <strong>{name}</strong>
@@ -87,7 +87,7 @@ export default function ClicksExceeded({
             <Section className="my-8 text-center">
               <Link
                 className="rounded-full bg-black px-6 py-3 text-center text-[12px] font-semibold text-white no-underline"
-                href={`https://app.dub.co/${slug}?upgrade=${nextPlan.name.toLowerCase()}}`}
+                href={`https://app.mylx.co/${slug}?upgrade=${nextPlan.name.toLowerCase()}}`}
               >
                 Upgrade my plan
               </Link>

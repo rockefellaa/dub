@@ -172,7 +172,7 @@ model Domain {
   verified    Boolean   @default(false)
   target      String?
   type        String    @default("redirect")
-  placeholder String    @default("https://dub.co/help/article/what-is-dub")
+  placeholder String    @default("https://mylx.co/help/article/what-is-dub")
   description String?
   project     Project?  @relation(fields: [projectId], references: [id], onDelete: Cascade)
   projectId   String?
@@ -202,7 +202,7 @@ model Link {
   password  String? // password to access the link
 
   proxy       Boolean @default(false) // Proxy to use custom OG tags (stored on redis) – if false, will use OG tags from target url
-  title       String? // OG title for the link (e.g. Dub.co - Open-Source Link Management Infrastructure)
+  title       String? // OG title for the link (e.g. mylx.co - Open-Source Link Management Infrastructure)
   description String? @db.VarChar(280) // OG description for the link (e.g. An open-source link management tool for modern marketing teams to create, share, and track short links.)
   image       String? @db.LongText // OG image for the link (e.g. https://d.to/og)
 

@@ -29,9 +29,9 @@ export const sendEmail = async ({
   return client.sendEmail({
     From:
       from || marketing
-        ? "steven@ship.dub.co"
+        ? "steven@ship.mylx.co"
         : process.env.NEXT_PUBLIC_IS_DUB
-          ? "system@dub.co"
+          ? "system@mylx.co"
           : `${process.env.NEXT_PUBLIC_APP_NAME} <system@${process.env.NEXT_PUBLIC_APP_DOMAIN}>`,
     To: email,
     Subject: subject,
