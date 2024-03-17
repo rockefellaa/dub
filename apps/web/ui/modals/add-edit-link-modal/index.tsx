@@ -6,11 +6,11 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import useSWR from "swr";
-import { FEATURES_LIST } from "./content";
-import { navItems } from "./nav";
+// import { FEATURES_LIST } from "./content";
+// import { navItems } from "./nav";
 
 export function NavMobile() {
-  const { domain = "dub.co" } = useParams() as { domain: string };
+  const { domain = "mylx.co" } = useParams() as { domain: string };
   const [open, setOpen] = useState(false);
   const [openFeatures, setOpenFeatures] = useState(false);
   // prevent body scroll when modal is open
@@ -23,7 +23,7 @@ export function NavMobile() {
   }, [open]);
 
   const { data: session } = useSWR(
-    domain === "dub.co" && "/api/auth/session",
+    domain === "mylx.co" && "/api/auth/session",
     fetcher,
     {
       dedupingInterval: 60000,
@@ -65,15 +65,15 @@ export function NavMobile() {
                 )}
               />
             </button>
-            {openFeatures && (
+            {/* {openFeatures && (
               <div className="grid gap-4 overflow-hidden py-4">
                 {FEATURES_LIST.map(({ slug, icon: Icon, shortTitle }) => (
                   <Link
                     key={slug}
                     href={
-                      domain === "dub.co"
+                      domain === "mylx.co"
                         ? `/${slug}`
-                        : `https://dub.co/${slug}`
+                        : `https://mylx.co/${slug}`
                     }
                     onClick={() => setOpen(false)}
                     className="flex w-full space-x-2"
@@ -83,13 +83,13 @@ export function NavMobile() {
                   </Link>
                 ))}
               </div>
-            )}
+            )} */}
           </li>
-          {navItems.map(({ name, slug }) => (
+          {/* {navItems.map(({ name, slug }) => (
             <li key={slug} className="py-3">
               <Link
                 href={
-                  domain === "dub.co" ? `/${slug}` : `https://dub.co/${slug}`
+                  domain === "mylx.co" ? `/${slug}` : `https://mylx.co/${slug}`
                 }
                 onClick={() => setOpen(false)}
                 className="flex w-full font-semibold capitalize"
@@ -97,7 +97,7 @@ export function NavMobile() {
                 {name}
               </Link>
             </li>
-          ))}
+          ))} */}
 
           {session && Object.keys(session).length > 0 ? (
             <li className="py-3">
