@@ -36,12 +36,12 @@ export const navItems = [
 ];
 
 export function Nav() {
-  const { domain = "mylx.co" } = useParams() as { domain: string };
+  const { domain = "dub.co" } = useParams() as { domain: string };
   const scrolled = useScroll(80);
   const selectedLayout = useSelectedLayoutSegment();
   const helpCenter = selectedLayout === "help";
   const { data: session, isLoading } = useSWR(
-    domain === "mylx.co" && "/api/auth/session",
+    domain === "dub.co" && "/api/auth/session",
     fetcher,
     {
       dedupingInterval: 60000,
@@ -64,8 +64,8 @@ export function Nav() {
         <div className="flex h-14 items-center justify-between">
           <div className="flex items-center space-x-4">
             <Link
-              href={domain === "mylx.co" ? "/" : `https://mylx.co`}
-              {...(domain !== "mylx.co" && {
+              href={domain === "dub.co" ? "/" : `https://dub.co`}
+              {...(domain !== "dub.co" && {
                 onClick: () => {
                   va.track("Referred from custom domain", {
                     domain,
@@ -114,11 +114,11 @@ export function Nav() {
                             <Link
                               key={slug}
                               href={
-                                domain === "mylx.co"
+                                domain === "dub.co"
                                   ? `/${slug}`
-                                  : `https://mylx.co/${slug}`
+                                  : `https://dub.co/${slug}`
                               }
-                              {...(domain !== "mylx.co" && {
+                              {...(domain !== "dub.co" && {
                                 onClick: () => {
                                   va.track("Referred from custom domain", {
                                     domain,
@@ -150,11 +150,11 @@ export function Nav() {
                         id={`nav-${slug}`}
                         key={slug}
                         href={
-                          domain === "mylx.co"
+                          domain === "dub.co"
                             ? `/${slug}`
-                            : `https://mylx.co/${slug}`
+                            : `https://dub.co/${slug}`
                         }
-                        {...(domain !== "mylx.co" && {
+                        {...(domain !== "dub.co" && {
                           onClick: () => {
                             va.track("Referred from custom domain", {
                               domain,
@@ -192,7 +192,7 @@ export function Nav() {
               <>
                 <Link
                   href={`${APP_DOMAIN}/login`}
-                  {...(domain !== "mylx.co" && {
+                  {...(domain !== "dub.co" && {
                     onClick: () => {
                       va.track("Referred from custom domain", {
                         domain,
@@ -206,7 +206,7 @@ export function Nav() {
                 </Link>
                 <Link
                   href={`${APP_DOMAIN}/register`}
-                  {...(domain !== "mylx.co" && {
+                  {...(domain !== "dub.co" && {
                     onClick: () => {
                       va.track("Referred from custom domain", {
                         domain,

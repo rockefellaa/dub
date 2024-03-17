@@ -13,14 +13,14 @@ import { tagsPaths } from "./tags";
 export const openApiObject: ZodOpenApiObject = {
   openapi: "3.0.3",
   info: {
-    title: "mylx.co API",
+    title: "dub.co API",
     description:
       "Dub is link management infrastructure for companies to create marketing campaigns, link sharing features, and referral programs.",
     version: "0.0.1",
     contact: {
-      name: "mylx.co Support",
-      email: "support@mylx.co",
-      url: "https://mylx.co/api",
+      name: "dub.co Support",
+      email: "support@dub.co",
+      url: "https://dub.co/api",
     },
     license: {
       name: "AGPL-3.0 license",

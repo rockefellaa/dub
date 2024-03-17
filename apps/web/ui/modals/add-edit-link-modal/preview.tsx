@@ -1,4 +1,4 @@
-# mylx.co Tinybird Setup
+# dub.co Tinybird Setup
 
 ```bash
 ├── datasources

@@ -46,6 +46,6 @@ export default async function AppMiddleware(req: NextRequest) {
 
   // otherwise, rewrite the path to /app
   return NextResponse.rewrite(
-    new URL(`/app.mylx.co${fullPath === "/" ? "" : fullPath}`, req.url),
+    new URL(`/app.dub.co${fullPath === "/" ? "" : fullPath}`, req.url),
   );
 }

@@ -73,7 +73,7 @@ export async function GET(req: NextRequest) {
         provider: "short",
       });
     }
-    if (headers.poweredBy?.includes("mylx.co")) {
+    if (headers.poweredBy?.includes("dub.co")) {
       return NextResponse.json({
         provider: "dub",
       });

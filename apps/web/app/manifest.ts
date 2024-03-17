@@ -2,9 +2,9 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "mylx.co App",
-    short_name: "mylx.co",
-    description: "mylx.co – the open-source link management infrastructure.",
+    name: "dub.co App",
+    short_name: "dub.co",
+    description: "dub.co – the open-source link management infrastructure.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

@@ -13,7 +13,7 @@ export const getTags: ZodOpenApiOperationObject = {
       projectSlug: z
         .string()
         .describe(
-          "The slug for the project to retrieve tags for. E.g. for `app.mylx.co/acme`, the `projectSlug` is `acme`.",
+          "The slug for the project to retrieve tags for. E.g. for `app.dub.co/acme`, the `projectSlug` is `acme`.",
         ),
     }),
   },

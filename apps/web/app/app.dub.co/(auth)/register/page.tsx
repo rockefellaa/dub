@@ -59,8 +59,8 @@ export default function RegisterPage() {
           className="ml-12 h-1/2 w-[150%] rounded-xl border border-gray-200 bg-white/90 p-4 shadow-xl"
         >
           <BlurImage
-            alt="mylx.co Analytics"
-            src="https://assets.mylx.co/features/analytics.png"
+            alt="dub.co Analytics"
+            src="https://assets.dub.co/features/analytics.png"
             width={1735}
             height={990}
             className="h-full rounded-xl border border-gray-200 object-cover shadow-md"

@@ -1,1 +1,1 @@
-export { default } from "../../app.mylx.co/(auth)/login/page";
+export { default } from "../../app.dub.co/(auth)/login/page";

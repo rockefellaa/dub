@@ -1,6 +1,6 @@
 # `@dub/utils`
 
-`@dub/utils` is a library of utility functions that are used across mylx.co's web applications.
+`@dub/utils` is a library of utility functions that are used across dub.co's web applications.
 
 ## Installation
 

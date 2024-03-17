@@ -1,6 +1,6 @@
 {
   "name": "@dub/tailwind-config",
-  "description": "Tailwindcss config for mylx.co",
+  "description": "Tailwindcss config for dub.co",
   "version": "0.0.4",
   "main": "index.ts",
   "types": "index.ts",
@@ -14,7 +14,7 @@
     "tailwindcss-radix": "^2.8.0"
   },
   "author": "Steven Tey <stevensteel97@gmail.com>",
-  "homepage": "https://mylx.co",
+  "homepage": "https://dub.co",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steven-tey/dub.git"
@@ -24,7 +24,7 @@
   },
   "keywords": [
     "dub",
-    "mylx.co",
+    "dub.co",
     "tailwind",
     "tailwindcss"
   ],

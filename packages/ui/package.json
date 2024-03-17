@@ -1,6 +1,6 @@
 {
   "name": "@dub/ui",
-  "description": "UI components for mylx.co",
+  "description": "UI components for dub.co",
   "version": "0.0.58",
   "sideEffects": false,
   "main": "./dist/index.js",
@@ -57,7 +57,7 @@
     "vaul": "^0.8.0"
   },
   "author": "Steven Tey <stevensteel97@gmail.com>",
-  "homepage": "https://mylx.co",
+  "homepage": "https://dub.co",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steven-tey/dub.git"
@@ -67,7 +67,7 @@
   },
   "keywords": [
     "dub",
-    "mylx.co",
+    "dub.co",
     "ui"
   ],
   "publishConfig": {

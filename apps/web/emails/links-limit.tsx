@@ -59,12 +59,12 @@ export default function LinksLimitAlert({
               />
             </Section>
             <Heading className="mx-0 my-7 p-0 text-center text-xl font-semibold text-black">
-              mylx.co Links Limit Alert
+              dub.co Links Limit Alert
             </Heading>
             <Text className="text-sm leading-6 text-black">
-              Your mylx.co project,{" "}
+              Your dub.co project,{" "}
               <Link
-                href={`https://app.mylx.co/${slug}`}
+                href={`https://app.dub.co/${slug}`}
                 className="text-black underline"
               >
                 <strong>{name}</strong>
@@ -112,7 +112,7 @@ export default function LinksLimitAlert({
             <Section className="mb-8 text-center">
               <Link
                 className="rounded-full bg-black px-6 py-3 text-center text-[12px] font-semibold text-white no-underline"
-                href={`https://app.mylx.co/${slug}?upgrade=${nextPlan.name.toLowerCase()}}`}
+                href={`https://app.dub.co/${slug}?upgrade=${nextPlan.name.toLowerCase()}}`}
               >
                 Upgrade my plan
               </Link>

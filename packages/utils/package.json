@@ -1,6 +1,6 @@
 {
   "name": "@dub/utils",
-  "description": "Utility functions and constants for mylx.co",
+  "description": "Utility functions and constants for dub.co",
   "version": "0.0.38",
   "sideEffects": false,
   "main": "./dist/index.mjs",
@@ -37,7 +37,7 @@
     "tailwind-merge": "^2.2.1"
   },
   "author": "Steven Tey <stevensteel97@gmail.com>",
-  "homepage": "https://mylx.co",
+  "homepage": "https://dub.co",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steven-tey/dub.git"
@@ -47,7 +47,7 @@
   },
   "keywords": [
     "dub",
-    "mylx.co",
+    "dub.co",
     "utils",
     "utility",
     "functions"

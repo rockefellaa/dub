@@ -12,9 +12,9 @@ export const getQRCodeQuerySchema = z.object({
     .string()
     .url()
     .optional()
-    .default("https://mylx.co")
+    .default("https://dub.co")
     .describe(
-      "The URL to generate a QR code for. Defaults to `https://mylx.co` if not provided.",
+      "The URL to generate a QR code for. Defaults to `https://dub.co` if not provided.",
     ),
   size: z.coerce
     .number()

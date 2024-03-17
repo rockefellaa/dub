@@ -104,7 +104,7 @@ export const POST = async (req: Request) => {
             limiter.schedule(() =>
               sendEmail({
                 email: user.email as string,
-                subject: `Thank you for upgrading to mylx.co ${plan.name}!`,
+                subject: `Thank you for upgrading to dub.co ${plan.name}!`,
                 react: UpgradeEmail({
                   name: user.name,
                   email: user.email as string,
@@ -247,9 +247,9 @@ export const POST = async (req: Request) => {
           projectUsers.map((email) =>
             sendEmail({
               email,
-              from: "steven@mylx.co",
-              subject: "Feedback on your mylx.co experience?",
-              text: "Hey!\n\nI noticed you recently cancelled your mylx.co subscription – we're sorry to see you go!\n\nI'd love to hear your feedback on your experience with Dub – what could we have done better?\n\nThanks!\n\nSteven Tey\nFounder, mylx.co",
+              from: "steven@dub.co",
+              subject: "Feedback on your dub.co experience?",
+              text: "Hey!\n\nI noticed you recently cancelled your dub.co subscription – we're sorry to see you go!\n\nI'd love to hear your feedback on your experience with Dub – what could we have done better?\n\nThanks!\n\nSteven Tey\nFounder, dub.co",
             }),
           ),
         ]);
